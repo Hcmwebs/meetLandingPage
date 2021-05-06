@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+@use './typo' as *;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontStack;
+  font-size: $fontSize;
+}
+

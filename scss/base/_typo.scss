@@ -1,0 +1,29 @@
+@use '../abstracts/'as *;
+
+h1{
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  font-weight: 900;
+  color:$textPrimaryColor;
+
+}
+
+h2{
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: 900;
+  color:$textPrimaryColor;
+}
+p{
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: $bodyTextColor;
+}
+
+small{
+  font-size: 1.6rem;
+  line-height:2.6rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color:$buttonPrimaryBgColor;
+}

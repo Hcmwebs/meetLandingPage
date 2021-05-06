@@ -1,3 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+/* === colors === */
+h1 {
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  font-weight: 900;
+  color: #28283d;
+}
 
+h2 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-weight: 900;
+  color: #28283d;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #87879d;
+}
+
+small {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: #4d96a8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */
