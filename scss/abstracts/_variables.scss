@@ -1,12 +1,15 @@
 /* === colors === */
 
 $buttonPrimaryBgColor : rgba(77,150, 168, 1.0);
-$buttonPrimaryHoverBgColor : rgba(143,227, 249, 1.0);
+$buttonPrimarySpanColor : rgba(143,227, 249, 1.0);
+$buttonPrimaryHoverBgColor : rgba(113,192, 212,1.0);
 $buttonSecondaryBgColor: rgba(133, 95, 177, 1.0);
 $buttonSecondaryHoverBgColor : rgba(217,184, 255,1.0);
 $textPrimaryColor : rgba(40, 40, 61, 1.0);
 $textSecondaryColor : rgba(250, 250, 250, 1.0);
 $bodyTextColor : rgba(135, 135, 157, 1.0);
+$boxShadowTextColor : rgba(135, 135, 157, 0.2);
 
 
-$boxShadow: 0, 1px 10px, 10px, $textPrimaryColor;
+$boxShadowHover : 0px 1px 20px 1px  rgba(40, 40, 61, 0.4);
+$boxShadow: 0px 1px 20px 1px $boxShadowTextColor;

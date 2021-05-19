@@ -4,7 +4,6 @@ h1 {
   font-size: 6.4rem;
   line-height: 6.4rem;
   font-weight: 900;
-  color: #28283d;
 }
 
 h2 {
@@ -15,7 +14,7 @@ h2 {
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.6rem;
   color: #87879d;
 }
@@ -51,6 +50,31 @@ body {
   background-color: #fff;
 }
 
+.btn {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  padding: 1.2rem 2.4rem;
+  border-radius: 2.9rem;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.btn__primary {
+  background-color: #4d96a8;
+  color: #fafafa;
+  transition: all, 0.3s ease-in-out;
+  box-shadow: 0px 1px 20px 1px rgba(135, 135, 157, 0.2);
+}
+.btn__primary:hover {
+  background-color: #71c0d4;
+  transform: scale(0.95);
+  box-shadow: 0px 1px 20px 1px rgba(40, 40, 61, 0.4);
+}
+.btn__secondary {
+  background-color: #855fb1;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -75,6 +99,34 @@ body {
   width: 50%;
   height: 153px;
   object-fit: cover;
+}
+.header__text {
+  padding: 2.4rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+}
+.header__text h2 {
+  padding: 0.8rem 3.5rem;
+}
+.header__text .btns {
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+}
+.header__text .btns .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.header__text .btns .btn span {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #8fe3f9;
 }
 
 /*# sourceMappingURL=styles.css.map */
