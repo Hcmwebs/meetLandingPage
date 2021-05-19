@@ -57,11 +57,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 4.5rem;
   overflow: hidden;
 }
 .header .logo {
-  padding: 4.5rem 0;
+  padding: 5rem 0;
 }
 .header .heroImg {
   width: 110%;

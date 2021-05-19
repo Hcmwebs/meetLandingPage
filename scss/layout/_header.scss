@@ -3,12 +3,12 @@
 .header{
   width: 100%;
   @include flex(column,center,center);
-  gap: 3rem;
+  gap: 4.5rem;
   overflow: hidden;
 
 
   .logo{
-    padding: 4.5rem 0;
+    padding: 5rem 0;
   }
 
   .heroImg{
