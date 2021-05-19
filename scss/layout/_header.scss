@@ -8,17 +8,18 @@
 
 
   .logo{
-    padding: 3rem 0;
+    padding: 4.5rem 0;
   }
 
   .heroImg{
-    width: 100%;
-    @include flex(row,space-between,center);
-    gap: 2rem;
+    width: 110%;
+    @include flex(row,center,center);
+    gap: 1rem;
 
 
 
     img{
+      width: 50%;
       height: 153px;
       object-fit: cover;
     }
