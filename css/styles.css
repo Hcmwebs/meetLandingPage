@@ -52,11 +52,28 @@ body {
 }
 
 .header {
-  padding: 3rem 0;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+.header .logo {
+  padding: 3rem 0;
+}
+.header .heroImg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.header .heroImg img {
+  height: 153px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
