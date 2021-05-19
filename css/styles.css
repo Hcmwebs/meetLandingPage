@@ -96,7 +96,7 @@ body {
   gap: 1rem;
 }
 .header .heroImg img {
-  width: 50%;
+  width: 60%;
   height: 153px;
   object-fit: cover;
 }
