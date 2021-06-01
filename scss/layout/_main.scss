@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+.main{
+  @include grid(center);
+  gap:2rem;
+
+
+}
