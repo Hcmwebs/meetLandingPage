@@ -11,5 +11,13 @@ $bodyTextColor : rgba(135, 135, 157, 1.0);
 $boxShadowTextColor : rgba(135, 135, 157, 0.2);
 
 
-$boxShadowHover : 0px 1px 20px 1px  rgba(40, 40, 61, 0.4);
-$boxShadow: 0px 1px 20px 1px $boxShadowTextColor;
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+$padding:1.8rem 3.6rem;
+$letterSpacing:0.1rem;
+
+$transition: 0.3s all ease-in-out;
+
+$borderRadius:0.4rem;

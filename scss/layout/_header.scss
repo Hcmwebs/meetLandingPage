@@ -42,6 +42,8 @@
       .btn{
         @include flex(row,center,center);
         gap: 1rem;
+        border-radius: 3rem;
+        font-size: 1.6rem;
 
         span{
           font-family: inherit;
