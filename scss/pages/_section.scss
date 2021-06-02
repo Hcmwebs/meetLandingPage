@@ -7,17 +7,17 @@
   min-height: 40vh;
   background-color:aqua;
 
-&--One{
+  &--One{
   width: 90vw;
-  height: 60vh;
+  background-color: grey;
 
 
-}
+  }
 
-&--Two{
+  &--Two{
   width: 100vw;
   background-color:red;
 
-}
+  }
 
 }
