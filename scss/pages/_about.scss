@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+
+.section {
+  width: 100%;
+  min-height: 40vh;
+  background-color:aqua;
+
+&--One{
+  width: 90vw;
+  height: 60vh;
+
+
+}
+
+&--Two{
+  width: 100vw;
+  background-color:red;
+
+}
+
+}

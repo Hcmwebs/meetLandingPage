@@ -164,7 +164,22 @@ body {
   color: #8fe3f9;
 }
 
+.section {
+  width: 100%;
+  min-height: 40vh;
+  background-color: aqua;
+}
+.section--One {
+  width: 90vw;
+  height: 60vh;
+}
+.section--Two {
+  width: 100vw;
+  background-color: red;
+}
+
 .main {
+  width: 100%;
   display: grid;
   place-items: center;
   gap: 2rem;
