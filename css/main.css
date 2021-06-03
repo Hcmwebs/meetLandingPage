@@ -17,10 +17,12 @@ p {
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: #87879d;
+  font-weight: 500;
 }
 
 small {
   font-size: 1.6rem;
+  font-weight: 900;
   line-height: 2.6rem;
   letter-spacing: 0.4rem;
   text-transform: uppercase;

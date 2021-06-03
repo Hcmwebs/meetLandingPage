@@ -3,26 +3,29 @@
 h1{
   font-size: 6.4rem;
   line-height: 6.4rem;
-  font-weight: 900;
+  font-weight: $fontBlack;
 
 }
 
 h2{
   font-size: 4rem;
   line-height: 4.4rem;
-  font-weight: 900;
+  font-weight: $fontBlack;
   color:$textPrimaryColor;
 }
 p{
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: $bodyTextColor;
+  font-weight: $fontMedium;
 }
 
 small{
   font-size: 1.6rem;
+  font-weight: $fontBlack;
   line-height:2.6rem;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
   color:$buttonPrimaryBgColor;
+
 }
