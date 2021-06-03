@@ -45,12 +45,14 @@
         gap: 1rem;
         border-radius: 3rem;
         font-size: 1.6rem;
+        font-weight: $fontBlack;
 
         span{
           font-family: inherit;
           font-size: inherit;
           font-weight: inherit;
           color:$buttonPrimarySpanColor;
+          text-transform: lowercase;
         }
       }
 

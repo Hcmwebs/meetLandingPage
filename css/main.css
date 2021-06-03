@@ -157,12 +157,14 @@ body {
   gap: 1rem;
   border-radius: 3rem;
   font-size: 1.6rem;
+  font-weight: 900;
 }
 .header__text .btns .btn span {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   color: #8fe3f9;
+  text-transform: lowercase;
 }
 
 .section {
