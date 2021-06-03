@@ -5,11 +5,42 @@
 .section {
   width: 100%;
   min-height: 40vh;
-  background-color:aqua;
+
 
   &--One{
   width: 90vw;
-  background-color: grey;
+
+
+
+  &__header{
+    margin: 6.4rem auto;
+    @include grid(center);
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr ));
+
+    .imgContainer{
+      width: 150px;
+      height: 143px;
+      border-radius: 0.8rem;
+      overflow: hidden;
+
+
+      .img{
+        width: 100%;
+        display: block;
+        object-fit:cover;
+      }
+
+    }
+
+  }
+  &__body{
+    margin-bottom: 6.4rem;
+    @include grid(center);
+    gap: 4rem;
+    text-align: center;
+
+  }
 
 
   }
