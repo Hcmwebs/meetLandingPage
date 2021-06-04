@@ -13,6 +13,7 @@
 
 
 
+
   &__header{
     margin: 6.4rem auto;
     @include grid(center);
@@ -36,7 +37,9 @@
 
   }
   &__body{
+    margin: 0 auto;
     margin-bottom: 6.4rem;
+    max-width:57.3rem;
     @include grid(center);
     gap: 4rem;
     text-align: center;
@@ -48,59 +51,142 @@
   }
 
   &--Two{
-  width: 100vw;
-  position: relative;
-
-  .separator{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform:translateX(-50%);
-    z-index: 9;
-  }
-
-  &__body{
-    @include flex(column,center,center);
-    margin-top: 11.2rem;
-    padding: 3rem 0;
-    background-color:darken($buttonPrimaryBgColor,25);
-    text-align: center;
+    width: 100vw;
     position: relative;
 
+    .separator{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform:translateX(-50%);
+      z-index: 9;
+    }
 
-    &:before {
+    &__body{
+      height:460px;
+      @include flex(column,center,center);
+      margin: 0 auto;
+      margin-top: 11.2rem;
+      padding: 3rem 0;
+      background-color:darken($buttonPrimaryBgColor,30);
+      text-align: center;
+      position: relative;
+
+
+      &:before {
+        content:'';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background:url(/assets/mobile/image-footer.jpg) no-repeat center center/cover;
+        mix-blend-mode: overlay;
+
+      }
+
+      &:after{
       content:'';
       width: 100%;
       height: 100%;
       position: absolute;
-      background:url(/assets/desktop/image-footer.jpg) no-repeat center center/cover;
-      mix-blend-mode: overlay;
-    }
+      inset:0;
+      background-color:rgba(0,0,0,0.3)
 
-
-    h2{
-      margin-top: 7rem;
-      color:$textSecondaryColor;
-    }
-    p{
-      margin: 4rem auto;
-      color:$textSecondaryColor;
-    }
-    .btn{
-      border-radius: 3rem;
-      font-size: 1.6rem;
-      font-weight: $fontBlack;
-
-      span{
-        font-size: inherit;
-        font-weight: inherit;
-        text-transform: lowercase;
       }
-    }
 
-  }
+      &__text {
+        width: 100vw;
+        @include flex(column, center, center);
+
+
+        h2{
+          width: 45.7rem;
+          margin-top: 7rem;
+          color:$textSecondaryColor;
+        }
+        p{
+          width:57.4rem;
+          margin: 4rem auto;
+          color:$textSecondaryColor;
+        }
+        .btn{
+          border-radius: 3rem;
+          font-size: 1.6rem;
+          font-weight: $fontBlack;
+
+          span{
+            font-size: inherit;
+            font-weight: inherit;
+            text-transform: lowercase;
+          }
+        }
+      }
+
+
+
+
+    }
 
   }
 
 }
 
+@media(min-width:$tablets){
+  .section--One__header{
+    grid-template-columns: repeat(auto-fit,minmax(160px, 1fr ));
+
+    .imgContainer{
+      width: 164px;
+      height: 156px;
+    }
+
+  }
+  .section--Two__body{
+    max-height: 42.8rem;
+    &:before{
+      background:url(/assets/tablet/image-footer.jpg) no-repeat center center/contain;
+    }
+
+  }
+
+}
+
+
+@media(min-width:$largeScreen){
+  .section--One__header{
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr ));
+
+    .imgContainer{
+      width: 255px;
+      height: 242px;
+    }
+
+  }
+
+  .section--Two__body{
+    max-height: 30.8rem;
+    &::before{
+      background:url(/assets/desktop/image-footer.jpg) no-repeat center center/contain;
+    }
+
+
+
+    &__text{
+      max-width:1110px;
+      flex-direction: row;
+
+
+      h2{
+        width:350px;
+        margin-top: 0;
+        text-align: left;
+      }
+      p{
+        width: 350px;
+        text-align: left;
+      }
+
+
+    }
+  }
+
+}
