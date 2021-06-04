@@ -4,12 +4,13 @@
 .header{
   width: 100%;
   @include flex(column,center,center);
-  gap: 4.5rem;
+  gap: 5rem;
   overflow: hidden;
 
 
   .logo{
-    padding: 5rem 0;
+
+    padding-top: 5rem ;
   }
 
   .heroImg{
@@ -28,7 +29,8 @@
   }
 
   &__text{
-    padding: 2.4rem;
+    max-width:46rem;
+    padding: 0 2.4rem;
     text-align:center;
     @include grid(center);
     gap: 4.0rem;
@@ -37,7 +39,7 @@
       padding: 0.8rem  3.5rem;
     }
     .btns{
-      @include grid(center);
+      @include flex(column,center,center);
       gap: 1.5rem;
 
       .btn{
@@ -60,5 +62,10 @@
 
 
 
+  }
+}
+@media (min-width: $tablets){
+  .header__text .btns{
+    flex-direction: row;
   }
 }

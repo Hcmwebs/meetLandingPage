@@ -21,5 +21,11 @@ body{
   min-height: 100vh;
   background-color: #fff;
   @include grid(center);
+  gap:6rem;
 
+}
+@media(min-width:$tablets){
+  .container{
+    gap:8rem;
+  }
 }

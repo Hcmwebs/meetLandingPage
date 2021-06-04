@@ -51,8 +51,14 @@ body {
   background-color: #fff;
   display: grid;
   place-items: center;
+  gap: 6rem;
 }
 
+@media (min-width: 768px) {
+  .container {
+    gap: 8rem;
+  }
+}
 /* buttons */
 .btn {
   cursor: pointer;
@@ -115,11 +121,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4.5rem;
+  gap: 5rem;
   overflow: hidden;
 }
 .header .logo {
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 .header .heroImg {
   width: 100%;
@@ -136,7 +142,8 @@ body {
   object-fit: cover;
 }
 .header__text {
-  padding: 2.4rem;
+  max-width: 46rem;
+  padding: 0 2.4rem;
   text-align: center;
   display: grid;
   place-items: center;
@@ -146,8 +153,10 @@ body {
   padding: 0.8rem 3.5rem;
 }
 .header__text .btns {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
 .header__text .btns .btn {
@@ -168,6 +177,11 @@ body {
   text-transform: lowercase;
 }
 
+@media (min-width: 768px) {
+  .header__text .btns {
+    flex-direction: row;
+  }
+}
 .section {
   width: 100%;
   min-height: 40vh;
