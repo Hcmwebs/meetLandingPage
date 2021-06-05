@@ -8,24 +8,20 @@
   overflow: hidden;
 
 
+
   .logo{
 
     padding-top: 5rem ;
   }
 
   .heroImg{
-    width: 100%;
-    @include flex(row,center,center);
+    width: 100vw;
+    height: 153px;
+    position: relative;
     margin: 0 auto;
-    gap: 2rem;
+    background: url(/assets/tablet/image-hero.png)no-repeat center center/cover;
+    @include flex(row,center,center);
 
-
-
-    .img{
-      width: 50%;
-      display: block;
-      object-fit: cover;
-    }
   }
 
   &__text{
@@ -58,7 +54,7 @@
           text-transform: lowercase;
         }
 
-      
+
       }
 
     }
@@ -68,7 +64,58 @@
   }
 }
 @media (min-width: $tablets){
+
+  .header{
+
+    .heroImg{
+      height: 303px;
+    }
+
+  }
+
   .header__text .btns{
     flex-direction: row;
   }
+}
+
+
+@media (min-width: $largeScreen){
+
+  .header{
+    position: relative;
+
+    .heroImg{
+      width:100%;
+      height: 358px;
+      background-image:none;
+
+      &:before,
+      &:after{
+        content:'';
+        width: 33%;
+        height: 100%;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:before{
+        left:0;
+        background:url(/assets/desktop/image-hero-left.png)no-repeat center center/cover;
+      }
+
+      &:after{
+        right:0;
+        background:url(/assets/desktop/image-hero-right.png)no-repeat center center/cover;
+      }
+    }
+
+    &__text{
+      position: absolute;
+      bottom: 0;
+    }
+
+  }
+
+
 }

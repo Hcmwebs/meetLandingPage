@@ -129,18 +129,15 @@ body {
   padding-top: 5rem;
 }
 .header .heroImg {
-  width: 100%;
+  width: 100vw;
+  height: 153px;
+  position: relative;
+  margin: 0 auto;
+  background: url(/assets/tablet/image-hero.png) no-repeat center center/cover;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  gap: 2rem;
-}
-.header .heroImg .img {
-  width: 50%;
-  display: block;
-  object-fit: cover;
 }
 .header__text {
   max-width: 46rem;
@@ -179,8 +176,42 @@ body {
 }
 
 @media (min-width: 768px) {
+  .header .heroImg {
+    height: 303px;
+  }
+
   .header__text .btns {
     flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    position: relative;
+  }
+  .header .heroImg {
+    width: 100%;
+    height: 358px;
+    background-image: none;
+  }
+  .header .heroImg:before, .header .heroImg:after {
+    content: "";
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .header .heroImg:before {
+    left: 0;
+    background: url(/assets/desktop/image-hero-left.png) no-repeat center center/cover;
+  }
+  .header .heroImg:after {
+    right: 0;
+    background: url(/assets/desktop/image-hero-right.png) no-repeat center center/cover;
+  }
+  .header__text {
+    position: absolute;
+    bottom: 0;
   }
 }
 .section {
