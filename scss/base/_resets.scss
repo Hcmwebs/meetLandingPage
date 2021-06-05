@@ -11,7 +11,7 @@
 
 body{
   @include grid(center);
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -20,7 +20,7 @@ body{
   max-width: 1440px;
   min-height: 100vh;
   background-color: #fff;
-  @include grid(center);
+  @include flex(column,space-between,center);
   gap:6rem;
 
 }
