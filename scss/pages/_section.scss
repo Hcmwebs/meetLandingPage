@@ -9,43 +9,36 @@
 
 
   &--One{
-  width: 90vw;
+    width: 90vw;
 
+    &__header{
+      margin: 6.4rem auto;
+      @include grid(center);
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit,minmax(150px, 1fr ));
 
+      .imgContainer{
+        width: 150px;
+        height: 143px;
+        border-radius: 0.8rem;
+        overflow: hidden;
 
-
-  &__header{
-    margin: 6.4rem auto;
-    @include grid(center);
-    gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr ));
-
-    .imgContainer{
-      width: 150px;
-      height: 143px;
-      border-radius: 0.8rem;
-      overflow: hidden;
-
-
-      .img{
-        width: 100%;
-        display: block;
-        object-fit:cover;
+        .img{
+          width: 100%;
+          display: block;
+          object-fit:cover;
+        }
       }
-
     }
 
-  }
-  &__body{
-    margin: 0 auto;
-    margin-bottom: 6.4rem;
-    max-width:57.3rem;
-    @include grid(center);
-    gap: 4rem;
-    text-align: center;
-
-
-  }
+    &__body{
+      margin: 0 auto;
+      margin-bottom: 6.4rem;
+      max-width:57.3rem;
+      @include grid(center);
+      gap: 4rem;
+      text-align: center;
+    }
 
 
   }
@@ -70,7 +63,7 @@
       margin-top: 11.2rem;
       padding: 3rem 0;
       background:$buttonPrimaryBgColor url(/assets/mobile/image-footer.jpg) no-repeat center center/cover;
-      background-blend-mode:overlay;
+      background-blend-mode:multiply;
       position: relative;
 
 
@@ -106,11 +99,7 @@
 
         }
 
-
       }
-
-
-
 
     }
 
@@ -120,8 +109,6 @@
 
 @media(min-width:$tablets){
   .section--One__header{
-    grid-template-columns: repeat(auto-fit,minmax(170px, 1fr ));
-
     .imgContainer{
       width: 164px;
       height: 156px;
