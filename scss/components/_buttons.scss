@@ -20,6 +20,7 @@
 
   &__secondary {
     background: $buttonSecondaryBgColor;
+    transition: $transition;
 
     &:hover {
       background: $buttonSecondaryHoverBgColor;
