@@ -29,6 +29,16 @@ small {
   color: #4d96a9;
 }
 
+a {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #87879d;
+  font-weight: 500;
+  text-decoration: none;
+  color: #4d96a9;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -351,6 +361,25 @@ body {
   display: grid;
   place-items: center;
   gap: 2rem;
+}
+
+.footer {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.footer .attributions {
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.footer .attributions p {
+  font-size: 1.2rem;
+}
+.footer .attributions a {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

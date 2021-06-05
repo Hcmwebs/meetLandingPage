@@ -29,3 +29,13 @@ small{
   color:$buttonPrimaryBgColor;
 
 }
+
+a{
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: $bodyTextColor;
+  font-weight: $fontMedium;
+  text-decoration: none;
+  color: $buttonPrimaryBgColor;
+  cursor: pointer;
+}
